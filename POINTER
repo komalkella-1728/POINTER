@@ -1,0 +1,23 @@
+#include <stdio.h>  // For input/output functions like printf and scanf
+
+int main() {
+    int arr[] = {10, 20, 30, 40, 50};
+    int *ptr = arr;  // Pointer to the first element of the array
+    int i;
+
+    printf("Array elements using pointer arithmetic:\n");
+
+    // Access array elements using pointer arithmetic
+    for (i = 0; i < 5; i++) {
+        printf("*(ptr + %d) = %d\n", i, *(ptr + i));
+    }
+
+    printf("\nAddress of array elements using pointer arithmetic:\n");
+
+    // Print addresses of array elements using pointer arithmetic
+    for (i = 0; i < 5; i++) {
+        printf("ptr + %d = %p\n", i, (ptr + i));
+    }
+
+    return 0;
+}
